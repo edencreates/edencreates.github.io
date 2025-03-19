@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+body {
+  font-family: "Gloock";
+  padding: 3% 4.5%;
+  background: #B5D584;
+  h1, h3 {
+    margin: 0;
+    font-weight: 100 !important;
+    letter-spacing: 3.5px;
+    font-size: 104px;
+  }
+  h4 {
+    font-size: 44px;
+    font-weight: 400;
+    letter-spacing: 2.64px;
+    text-transform: uppercase;
+    font-family: "DM Serif Text";
+    margin: 0;
+  }
+  .thank-you {
+    padding: 168px 0;
+  }
+}
+

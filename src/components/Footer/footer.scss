@@ -1,0 +1,35 @@
+.Footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 150px;
+    div {
+        text-align: center;
+    }
+    .resume {
+        letter-spacing: 1.8px;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: auto;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+        padding-top: 10px;
+    }
+    p {
+        font-family: "Albert Sans";
+        font-size: 36px;
+        font-weight: 400;
+        color: #64754A;
+        margin: 0;
+    }
+    .goUp {
+        padding-left: 250px;
+        p {
+            font-family: "Gloock";
+            font-size: 48px;
+            letter-spacing: 2.4px;
+            color: #000;
+        }
+    }
+}

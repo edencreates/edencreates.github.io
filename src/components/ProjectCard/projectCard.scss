@@ -1,0 +1,59 @@
+.ProjectCard {
+    border-radius: 45px;
+    background: rgba(255, 255, 255, 0.30);
+    margin-bottom: 36px;
+    .card_container {
+        padding: 38px 62px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div {
+            height: 255px;
+            width: 600px;
+            position: relative;
+        }
+        img {
+            filter: grayscale(100%);
+            &:hover {
+                filter: grayscale(0%);
+            }
+        }
+        p {
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: 2.16px;
+            font-family: "Albert Sans";
+            margin: 0;
+        }
+        .subName {
+            padding-bottom: 16px;
+        }
+        h4 {
+            padding-bottom: 6px;
+        }
+        a {
+            font-size: 28px;
+            letter-spacing: 1.68px;
+            font-family: "Albert Sans";
+            padding: 16px;
+            border: solid black 1px;
+            border-radius: 30px;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+    }
+}
+
+.coming-soon {
+    background: rgba(150, 150, 150, 0.30);
+    .card_container {
+        div {
+            height: 285px;
+            .coming-soon {
+                padding-bottom: 35px;
+                background: transparent;
+            }
+        }
+    }
+}

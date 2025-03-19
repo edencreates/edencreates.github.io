@@ -1,0 +1,32 @@
+.EdenFifty {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    gap: 75px;
+    max-width: 1180px;
+    margin: 160px 90px 230px 90px;
+    align-items: end;
+    position: relative;
+    h1 {
+        margin: 75px 0 80px 0;
+    }
+    h2 {
+        position: absolute;
+        top: 0;
+        font-family: "Albert Sans";
+        font-size: 54px;
+        letter-spacing: 2.7px;
+        max-width: 515px;
+        font-weight: 400;
+        right: 15%;
+        margin: 0;
+        span {
+            color: white;
+        }
+    }
+    p {
+        font-size: 36px;
+        font-family: "Albert Sans";
+        font-weight: 400;
+        letter-spacing: 1.8px;
+    }
+}

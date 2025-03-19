@@ -1,0 +1,26 @@
+.Hero {
+  height: 740px;
+  position: relative;
+  .solo_span {
+    padding-right: 50px;
+  }
+  img {
+    position: absolute;
+    left: 35%;
+    bottom: 10%;
+  }
+  .heroCopy_wrapper {
+    margin-left: 10%;
+    margin-top: 10%;
+    position: relative;
+    z-index: 10;
+    h1 {
+    font-size: 6.5em;
+    }
+
+    h3 {
+      font-size: 40px;
+      font-weight: 200;
+    }
+  }
+}

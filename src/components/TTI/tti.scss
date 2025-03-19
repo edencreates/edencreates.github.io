@@ -1,0 +1,15 @@
+.TTI {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    p {
+        font-size: 54px;
+        font-family: "Albert Sans";
+        letter-spacing: 2.7px;
+        line-height: 160%;
+        margin: 0;
+    }
+    .tti-list {
+        padding-top: 40px
+    }
+}
