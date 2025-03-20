@@ -4,6 +4,11 @@
   .solo_span {
     padding-right: 50px;
   }
+  #typingEffect {
+    span {
+      font-weight: 550;
+    }
+  }
   img {
     position: absolute;
     left: 35%;
@@ -11,7 +16,7 @@
     z-index: -5;
   }
   .heroCopy_wrapper {
-    margin-left: 10%;
+    margin-left: 14%;
     margin-top: 10%;
     position: relative;
     z-index: 10;

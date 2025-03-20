@@ -9,8 +9,8 @@ const ProjectList = () => {
       <div className="pl_header">
         <Image
           src="/ghosty.png"
-          width={45}
-          height={45}
+          width={40}
+          height={40}
         />
         <h4>Some of my projects:</h4>
       </div>
