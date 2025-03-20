@@ -8,14 +8,14 @@ const Navbar = () => {
   return (
     <nav className="Navbar">
       <div className="navigation_wrapper flex">
-        <Link href="/">
+        <Link className='navChild' href="/">
           <Image 
             src="/logo.png"
             width={72}
             height={72}
           />
         </Link>
-        <ul>
+        <ul className='navChild'>
           <Link href="/about">
           <li>
             About
@@ -25,9 +25,11 @@ const Navbar = () => {
             Projects
           </li>
         </ul>
-        <button>
-          Contact Me
-        </button>
+        <div className='navChild navButtonWrapper'>
+          <button>
+            Contact Me
+          </button>
+        </div>
       </div> 
     </nav>
   );

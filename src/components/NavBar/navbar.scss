@@ -4,6 +4,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    .navChild {
+      flex: 0 1 33.33%;
+    }
+    .navButtonWrapper {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
   ul {
     display: flex;
@@ -16,6 +23,10 @@ nav {
       text-transform: uppercase;
       font-family: "Albert Sans", sans-serif;
       font-size: 36px;
+      color: black;
+    }
+    a {
+      text-decoration: none;
     }
   }
   button {
