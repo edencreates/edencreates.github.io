@@ -39,6 +39,37 @@ body{
     h1 {
       letter-spacing: 3.2px;
     }
+    h4 {
+      font-size: 16px;
+      letter-spacing: 0.96px;
+    }
+    .thank-you {
+      padding: 50px 0;
+      height: 140px;
+    }
+  }
+
+  .Footer {
+    div {
+      flex: 0 1 33.33% !important;
+    }
+    p {
+      font-size: 12px !important;
+    }
+    svg {
+      height: 58px;
+      width: 58px;
+    }
+  }
+
+  .goUp {
+    width: 58px;
+    height: 58px;
+    padding: 0 !important;
+    p {
+      font-size: 18px !important;
+      letter-spacing: 0.5px !important;
+    }
   }
 }
 

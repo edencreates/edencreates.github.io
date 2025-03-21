@@ -1,11 +1,53 @@
 .ProjectList {
-    .pl_header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 60px;
-        img {
-            padding-left: 16px;
-            padding-right: 8px;
-        }
+  .pl_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    img {
+      padding-left: 16px;
+      padding-right: 8px;
     }
+  }
+}
+
+@media (max-width: 1350px) {
+  .pl_header {
+    margin-bottom: 25px !important;
+    img {
+      height: 18px;
+      width: 18px;
+    }
+  }
+  .ProjectCard {
+    margin-bottom: 15px !important;
+    .card_container {
+      padding: 18px 30px !important;
+      flex-direction: column-reverse;
+      div {
+        width: 290px !important;
+        height: unset !important;
+        .coming-soon {
+          padding-bottom: 10px !important;
+        }
+      }
+      img {
+        width: 290px;
+        height: 180px;
+        padding-top: 10px;
+        padding-bottom: 8px;
+      }
+      p {
+        font-size: 12px !important;
+        letter-spacing: 0.72px !important;
+      }
+      a {
+        font-size: 10px !important;
+        padding: 9px 8px !important;
+        letter-spacing: 0.6px !important;
+      }
+      .subName {
+        padding-bottom: 3px !important;
+      }
+    }
+  }
 }
