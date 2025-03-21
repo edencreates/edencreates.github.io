@@ -1,11 +1,13 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { Gloock } from "next/font/google";
 import "./global.scss";
 import Navbar from "@/components/NavBar/navbar";
 import Footer from "@/components/Footer/footer";
+import MobileNavbar from "@/components/NavBar/mobilenav";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const itdoesntmatter = Gloock({
   subsets: ["latin"],
+  weight: '400'
 });
 
 const geistMono = Geist_Mono({
@@ -22,11 +24,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${itdoesntmatter.className} antialiased`}
       >
-        <Navbar/>
-        {children}
-        <Footer/>
+        <div className="edenCreates">
+          <Navbar/>
+          <MobileNavbar/>
+          {children}
+          <Footer/>
+        </div>
+        
       </body>
     </html>
   );

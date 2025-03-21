@@ -13,13 +13,12 @@
     position: absolute;
     left: 35%;
     bottom: 10%;
-    z-index: -5;
   }
   .heroCopy_wrapper {
     margin-left: 14%;
     margin-top: 10%;
     position: relative;
-    z-index: 10;
+    z-index: 3;
     h1 {
     font-size: 6.5em;
     }
@@ -29,4 +28,28 @@
       font-weight: 200;
     }
   }
+}
+
+@media (max-width: 1350px)  {
+  .Hero{
+    height: unset;
+    padding-bottom: 280px;
+    img {
+      height: 304px;
+      width: 304px;
+      left: 50%;
+      bottom: 42%;
+    }
+    .heroCopy_wrapper {
+      margin-left: 5% !important;
+      margin-top: 48.5% !important;
+      .solo_span {
+        padding-right: 18px;
+      }
+      h1 {
+      font-size: 2em !important;
+      }
+    }
+  }
+  
 }
