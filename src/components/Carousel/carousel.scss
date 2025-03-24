@@ -1,0 +1,11 @@
+.Carousel {
+    padding-bottom: 60px;
+    .slick-track {
+        display: flex !important;
+        align-items: flex-end;
+        .slick-slide {
+            width: unset !important;
+            margin: 0 18px;
+        }
+    }
+}

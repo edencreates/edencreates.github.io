@@ -5,6 +5,7 @@ nav {
     justify-content: space-between;
     .navChild {
       flex: 0 1 33.33%;
+      z-index: 10;
     }
     .navButtonWrapper {
       display: flex;
@@ -22,7 +23,7 @@ nav {
       text-transform: uppercase;
       font-family: "Albert Sans", sans-serif;
       font-size: 36px;
-      color: black;
+      color: black !important;
     }
     a {
       text-decoration: none;

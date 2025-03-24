@@ -28,7 +28,9 @@ const Navbar = () => {
           </li>
           </Link>
           <li>
-            Projects
+            <Link style={{ color: "black" }} href="#projects">
+              Projects
+            </Link>
           </li>
         </ul>
         <div className='navChild navButtonWrapper'>

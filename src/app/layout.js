@@ -24,7 +24,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${itdoesntmatter.className} antialiased`}
+        style={{background: '#B5D584'}}
+        className={`${itdoesntmatter.className} antialiased caseStudyWhite`}
       >
         <div className="edenCreates">
           <Navbar/>

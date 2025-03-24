@@ -5,7 +5,7 @@ import ProjectCard from '../ProjectCard/projectCard';
 
 const ProjectList = () => {
   return (
-    <div className="ProjectList">
+    <div className="ProjectList" id='projects'>
       <div className="pl_header">
         <Image
           src="/ghosty.png"
@@ -20,6 +20,7 @@ const ProjectList = () => {
         year_completed="2024"
         card_image="/kitchenpad.png"
         current_status="active"
+        project_link={'/recipeace'}
       />
       <ProjectCard 
         project_name="CYBERBULLYING RESEARCH"

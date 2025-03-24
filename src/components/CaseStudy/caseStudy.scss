@@ -1,0 +1,24 @@
+.CaseStudy {
+    background: white;
+    h2 {
+        font-size: 56px;
+        padding: 60px 4.5%;
+        letter-spacing: 5.6px;
+        margin: 0;
+    }
+    .caseStudyImage {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain;
+    }
+    .doubleImage {
+        height: unset !important;
+    }
+    @media (max-width: 1350px) {
+        .moveUp {
+            position: relative;
+            bottom: 3px;
+        }
+    }
+}
+

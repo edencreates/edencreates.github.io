@@ -1,3 +1,4 @@
+"use client"
 import './global.scss'
 import Hero from "../components/Hero/hero";
 import ProjectList from "@/components/ProjectList/projectList";
@@ -6,6 +7,12 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        <style>
+          {`body {
+              background: #B5D584 !important;
+            }`
+          }
+        </style>
         <Hero/>
         <ProjectList/>
         <svg className="thank-you" height="532" viewBox="0 0 1427 532" fill="none" xmlns="http://www.w3.org/2000/svg">

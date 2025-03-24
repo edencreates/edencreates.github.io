@@ -6,7 +6,6 @@ import Link from 'next/link';
 const MobileNavbar = () => {
 
   const closeMenu = () => {
-    console.log(document.querySelector('.MobileNavbar'))
     const mobileNavBar = document.querySelector('.MobileNavbar');
     mobileNavBar.style.right = '-250px';
   };
