@@ -10,6 +10,9 @@ export default function Home() {
         <style>
           {`body {
               background: #B5D584 !important;
+            }
+            .MobileNavbar {
+              right: -250px
             }`
           }
         </style>

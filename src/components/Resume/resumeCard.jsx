@@ -7,7 +7,7 @@ const ResumeCard = ({paper, topic, year, place}) => {
         <p>{topic}</p>
         <p>{year}</p>
       </div>
-      <p>{place}</p>
+      <p className='resumePlace'>{place}</p>
     </div>
   );
 };

@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import Carousel from '../Carousel/carousel';
 import GifFiddy from '../GifFiddy/giftfiddy';
 
-const CaseStudy = ({navBar_color}) => {
+const CaseStudy = () => {
 
   return (
     <div className="CaseStudy">
@@ -41,16 +41,16 @@ const CaseStudy = ({navBar_color}) => {
           className='doubleImage caseStudyImage'
         />
         <Image
-          src="/recipeace/slide7.png"
+          src="/recipeace/slide6.5.png"
           width={1920}
           height={1080}
           className='doubleImage caseStudyImage'
         />
         <Image
-          src="/recipeace/slide8.png"
+          src="/recipeace/slide7.png"
           width={1920}
           height={1080}
-          className='caseStudyImage'
+          className='doubleImage caseStudyImage'
         />
       </div>
 

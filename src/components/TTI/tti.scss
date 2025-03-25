@@ -13,3 +13,40 @@
         padding-top: 40px
     }
 }
+
+.mobileTTI {
+    display: none;
+}
+
+@media (max-width: 1350px) {
+    .TTI {
+        display: none;
+    }
+    .mobileTTI {
+        padding-top: 45px;
+        display: block;
+        .mTTI_group {
+            position: relative;
+            .tti {
+                position: absolute;
+                top: 77px;
+                right: 0;
+            }
+            img {
+                bottom: -16px;
+            }
+            p {
+                margin: 0;
+                font-size: 18px;
+                font-family: "Albert Sans";
+                letter-spacing: 0.18px;
+                line-height: 160%;
+            }
+        }
+        h1 {
+            font-size: 36px;
+            letter-spacing: 2.16px;
+            margin-bottom: 15px;
+        }
+    }
+}

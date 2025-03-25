@@ -28,6 +28,7 @@ const ProjectList = () => {
         year_completed="2022"
         card_image="/basic.png"
         current_status="active"
+        project_link={'/behrend'}
       />
       <ProjectCard 
         project_name="FOCUMON APP REDESIGN"

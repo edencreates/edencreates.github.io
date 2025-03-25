@@ -41,3 +41,33 @@
     }
 }
 
+@media (max-width: 1350px) {
+    .resumeBlock {
+        h1 {
+            font-size: 36px;
+            letter-spacing: 2.16px;
+            padding-bottom: 40px;
+            padding-top: 75px;
+        }
+
+        h2, p {
+            font-size: 18px;
+            letter-spacing: 0.9px;
+        }
+
+        .blackLinelarge, .blackLinesmall {
+            margin: 18px 0;
+        } 
+        
+        .leftBlockHeader {
+            padding-bottom: 0;
+        }
+
+        .resumePlace {
+            text-align: right;
+        }
+    }
+    
+}
+
+

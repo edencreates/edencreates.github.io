@@ -1,0 +1,28 @@
+.Research {
+    background: white;
+    div {
+        background: #b8c8e2;
+    }
+    h2 {
+        font-size: 56px;
+        padding: 60px 4.5%;
+        letter-spacing: 5.6px;
+        margin: 0;
+    }
+    .researchImage {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain;
+    }
+    .doubleImage {
+        height: unset !important;
+    }
+    .moveUp {
+        position: relative;
+    }
+    @media (max-width: 1350px) {
+        div {
+            background: white;
+        }
+    }
+}

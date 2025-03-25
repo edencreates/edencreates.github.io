@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from 'react';
+import React, { use, useEffect } from 'react';
 import './navbar.scss';
 import Link from 'next/link';
 
@@ -9,6 +9,7 @@ const MobileNavbar = () => {
     const mobileNavBar = document.querySelector('.MobileNavbar');
     mobileNavBar.style.right = '-250px';
   };
+  let projectLink = (window.location.href == 'http://localhost:3000/' || window.location.href == 'https://edencreates.github.io/') ? '#projects' : '/'
 
   return (
     <div className="MobileNavbar">
@@ -19,14 +20,18 @@ const MobileNavbar = () => {
         </svg>
 
         <ul className='navChild'>
-          <Link href="/about">
+          <Link href="/about" onClick={() => closeMenu()}>
           <li>
             About
           </li>
           </Link>
-          <li style={{padding: "28px 0"}}>
-            Projects
-          </li>
+
+          <Link href={projectLink} onClick={() => closeMenu()}>
+            <li style={{padding: "28px 0"}}>
+              Projects
+            </li>
+          </Link>
+
           <li>
             Contact Me
           </li>
