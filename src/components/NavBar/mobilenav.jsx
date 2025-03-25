@@ -1,5 +1,5 @@
 "use client"
-import React, { use, useEffect } from 'react';
+import React from 'react';
 import './navbar.scss';
 import Link from 'next/link';
 
@@ -26,7 +26,7 @@ const MobileNavbar = () => {
           </li>
           </Link>
 
-          <Link onClick={() => closeMenu()}>
+          <Link href='/' onClick={() => closeMenu()}>
             <li style={{padding: "28px 0"}}>
               Projects
             </li>
