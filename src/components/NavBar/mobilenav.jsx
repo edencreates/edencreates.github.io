@@ -9,7 +9,7 @@ const MobileNavbar = () => {
     const mobileNavBar = document.querySelector('.MobileNavbar');
     mobileNavBar.style.right = '-250px';
   };
-  let projectLink = window?.location?.href == 'https://edencreates.github.io/' ? '#projects' : '/'
+  //let projectLink = window?.location?.href == 'https://edencreates.github.io/' ? '#projects' : '/'
 
   return (
     <div className="MobileNavbar">
