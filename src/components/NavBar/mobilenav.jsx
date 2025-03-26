@@ -11,6 +11,9 @@ const MobileNavbar = () => {
     console.log(window.location.href)
   }
 
+  const location = window.location.href;
+  console.log(location)
+
   const closeMenu = () => {
     const mobileNavBar = document.querySelector('.MobileNavbar');
     mobileNavBar.style.right = '-250px';
@@ -26,15 +29,15 @@ const MobileNavbar = () => {
         </svg>
 
         <ul className='navChild'>
-          <Link href="/about" onClick={() => closeMenu()}>
+          <Link href='/about' onClick={() => closeMenu()}>
           <li>
-            Home
+            About
           </li>
           </Link>
 
           <Link href='/' onClick={() => closeMenu()}>
             <li style={{padding: "28px 0"}}>
-              Projects
+              Home
             </li>
           </Link>
 
