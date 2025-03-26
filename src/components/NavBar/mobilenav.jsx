@@ -5,6 +5,12 @@ import Link from 'next/link';
 
 const MobileNavbar = () => {
 
+  function openEmailApp() {
+    window.location.href = "mailto:edenyeung0303@gmail.com";
+    console.log('ran')
+    console.log(window.location.href)
+  }
+
   const closeMenu = () => {
     const mobileNavBar = document.querySelector('.MobileNavbar');
     mobileNavBar.style.right = '-250px';
@@ -32,7 +38,7 @@ const MobileNavbar = () => {
             </li>
           </Link>
 
-          <li>
+          <li onClick={() => openEmailApp()}>
             Contact Me
           </li>
         </ul>
