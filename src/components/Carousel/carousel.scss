@@ -9,3 +9,46 @@
         }
     }
 }
+
+@media (max-width: 1350px) {
+    .Carousel {
+        .cardContainer {
+            height: 50%;
+            width: 50%;
+        }
+        h2 {
+            font-size: 14px;
+            letter-spacing: 1.6px;
+        }
+        .slick-slider {
+            width: 95%;
+            margin: auto;
+            position: relative;
+            .slick-slide {
+                width: 100% !important;
+                margin: unset !important;
+                img {
+                    margin: auto;
+                    height: 60%;
+                    width: 60%;
+                }
+            }
+        }
+    }
+    
+    .prevArrow, .nextArrow {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        z-index: 5;
+    }
+
+    .nextArrow {
+        right: -3%;
+    }
+
+    .prevArrow {
+        left: 10%;
+        transform: translate(-50%, -50%), scale(-1, -1);
+    }
+}

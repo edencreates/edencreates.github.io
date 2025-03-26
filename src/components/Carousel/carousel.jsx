@@ -12,6 +12,9 @@ const headingFont = Limelight({
   weight: '400'
 });
 
+
+
+
 const Carousel = ({
   header_copy, 
   header_color, 
@@ -21,8 +24,31 @@ const Carousel = ({
   folder, 
   carousel_number,
   imageWidth,
-  imageHeight
+  imageHeight,
+  arrowColor,
+  boxShadow
   }) => {
+
+  function NextArrow(props) {
+    const { onClick } = props;
+    return (
+      <svg style={{fill: `${arrowColor}`}} className='nextArrow' onClick={onClick} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height={50} width={50}>
+        <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/>
+      </svg>
+    );
+  }
+  
+  const PrevArrow = (props) => {
+    const { onClick } = props;
+    return (
+      <svg style={{fill: `${arrowColor}`}} className='prevArrow' onClick={onClick} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height={50} width={50}>
+        <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" transform="scale(-1, 1) translate(-320, 0)" />
+      </svg>
+  
+    )
+    
+  }
+  
   const settings = {
     dots: false,
     infinite: true,
@@ -30,7 +56,24 @@ const Carousel = ({
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    rtl: flow_reverse
+    rtl: flow_reverse,
+    draggable: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          autoplay: false,
+          centerMode: true,
+          arrows: true,
+          nextArrow: <NextArrow />,
+          prevArrow: <PrevArrow />
+        }
+      },
+    ]
   };
 
   const carouselSlides = [];
@@ -44,6 +87,7 @@ const Carousel = ({
           width={imageWidth} //321
           height={imageHeight} // 695
           alt={`Frame ${i}`}
+          style={{ boxShadow: `${boxShadow ? '4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(0, 0, 0, 0.1' : 'none' }`}}
         />
       </div>
     );

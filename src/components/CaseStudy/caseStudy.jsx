@@ -63,6 +63,8 @@ const CaseStudy = () => {
         background_color={'FFF'}
         imageHeight={695}
         imageWidth={321}
+        arrowColor={'#DD6162'}
+        boxShadow={true}
       />
       <Carousel 
         folder='onboarding' 
@@ -73,6 +75,8 @@ const CaseStudy = () => {
         header_color={'FFF'}
         imageHeight={826}
         imageWidth={446}
+        arrowColor={'#FFF'}
+        boxShadow={false}
       />
       <GifFiddy
         background_color='white'
@@ -89,12 +93,6 @@ const CaseStudy = () => {
         background_color='white'
         gif_file='thirdGif'
         text='Allergies? No problem Search by dietary restrictions'
-      />
-      <Image
-        src="/recipeace/slide9.png"
-        width={1920}
-        height={1080}
-        className='doubleImage caseStudyImage'
       />
       <Image
         src="/recipeace/slide10.png"
@@ -119,6 +117,12 @@ const CaseStudy = () => {
         width={1920}
         height={1080}
         className='caseStudyImage'
+      />
+      <Image
+        src="/recipeace/slide9.png"
+        width={1920}
+        height={1080}
+        className='doubleImage caseStudyImage'
       />
       <Image
         src="/recipeace/slide14.png"
