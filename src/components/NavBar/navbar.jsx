@@ -4,6 +4,12 @@ import Image from 'next/image';
 import './navbar.scss';
 import Link from 'next/link';
 
+function openEmailApp() {
+  window.location.href = "mailto:edenyeung0303@gmail.com";
+  console.log('ran')
+  console.log(window.location.href)
+}
+
 const Navbar = () => {
   const openMenu = () => {
     const mobileNavBar = document.querySelector('.MobileNavbar');
@@ -11,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="Navbar">
+    <nav className="Navbar" id='navBar'>
       <div className="navigation_wrapper flex">
         <Link className='navChild desktopLogo' href="/">
           <Image 
@@ -34,7 +40,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className='navChild navButtonWrapper'>
-          <button>
+          <button onClick={() => openEmailApp()}>
             Contact Me
           </button>
         </div>

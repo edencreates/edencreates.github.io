@@ -7,7 +7,7 @@ import { Typewriter } from 'react-simple-typewriter'
 const Hero = () => {
 
   return (
-    <div className="Hero">
+    <div className="Hero" id="hero">
       <div className="heroCopy_wrapper">
         <h1 className="title">Hi,<br></br>
           <span className="solo_span">I'm</span>
