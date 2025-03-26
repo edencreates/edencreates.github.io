@@ -28,12 +28,11 @@ const EdenFifty = () => {
           <h1>About</h1>
           <div className="image-half">
             <Image
-              src="/eden.png"
-              width={258}
-              height={344}
+              src="/mobileEden.png"
+              width={340}
+              height={440}
             />
           </div>
-          <h2>Let's create intuitive and user-friendly designs togeth<span>er!</span></h2>
           <div className="text-half">
             <p>
               Hi, I’m Eden, a UX designer with a background in Applied Psychology from Penn State. My research expertise helps me create user-centered, data-driven designs that balance usability and business goals.
