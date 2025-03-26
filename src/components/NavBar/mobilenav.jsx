@@ -11,9 +11,6 @@ const MobileNavbar = () => {
     console.log(window.location.href)
   }
 
-  const location = window.location.href;
-  console.log(location)
-
   const closeMenu = () => {
     const mobileNavBar = document.querySelector('.MobileNavbar');
     mobileNavBar.style.right = '-250px';
