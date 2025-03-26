@@ -28,7 +28,7 @@ const MobileNavbar = () => {
         <ul className='navChild'>
           <Link href="/about" onClick={() => closeMenu()}>
           <li>
-            About
+            Home
           </li>
           </Link>
 
